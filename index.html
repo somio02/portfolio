@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>About Me - Pujan Gurung</title>
+</head>
+
+<body>
+    <header class="top">
+        <div class="header-container">
+            <div class="logo">
+                <img src="Image%20folder/pujan.png" alt="Pujan Gurung Logo">
+            </div>
+
+            <nav class="navigation">
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#education">Education</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+
+            <div class="search">
+                <form>
+                    <div class="search-box">
+                        <input id="search" type="search" placeholder="Search..." aria-label="Search">
+                        <button type="submit" aria-label="Search Submit">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="11" cy="11" r="8"></circle>
+                                <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                            </svg>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+
+        <section id="about" class="about">
+            <div class="about-content">
+                <h1>About Me</h1>
+                <p>
+                    Hello, my name is Pujan Gurung. I am a passionate learner exploring web development and computer systems engineering.
+                </p>
+            </div>
+            
+            <div class="about-image">
+                <img src="Image%20folder/profile.jpg" alt="Pujan Gurung Profile picture" width="100">
+            </div>
+        </section>
+
+        <section id="projects" class="projects">
+            <h2>My Projects</h2>
+
+            <div class="projects-grid">
+                <article class="project">
+                    <h3>E-Commerce Site</h3>
+                    <p>
+                        A web-based application designed to help users efficiently manage tasks and browse products through an intuitive interface.
+                    </p>
+                </article>
+            </div>
+        </section>
+
+        <section id="skills" class="skills"> 
+            <h2>My Skills</h2>
+
+            <div class="table-container">
+                <table class="skills-table">
+                    <thead>
+                        <tr>
+                            <th>Category</th>
+                            <th>Skills & Technologies</th>
+                            <th>Proficiency</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Programming Languages</strong></td>
+                            <td>Java, C, C++, JavaScript</td>
+                            <td>Intermediate</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Web Development</strong></td>
+                            <td>HTML5, CSS3, Flexbox, Responsive Design</td>
+                            <td>Intermediate</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Developer Tools & IDEs</strong></td>
+                            <td>VS Code, Git, GitHub, Command Line</td>
+                            <td>Proficient</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Database & Data</strong></td>
+                            <td>MySQL, MS Excel, Data Structures</td>
+                            <td>Basics</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Engineering & Systems</strong></td>
+                            <td>Computer Architecture, Digital Logic, Linux Fundamentals</td>
+                            <td>Academic / Learning</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Soft Skills</strong></td>
+                            <td>Problem Solving, Teamwork, Technical Communication, Time Management</td>
+                            <td>Advanced</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <section id="education" class="education">
+            <h2>Education</h2>
+
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>S.N</th>
+                            <th>Level</th>
+                            <th>Institution Name</th>
+                            <th>GPA</th>
+                            <th>Grade</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>Secondary Level</td>
+                            <td>KMC</td>
+                            <td>3.3</td>
+                            <td>A</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <section id="contact" class="contact">
+            <h2>Contact Me</h2>
+
+            <form class="contact-form">
+                <p>Feel free to reach out for collaborations or questions:</p>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input id="name" type="text" placeholder="Enter your name" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input id="email" type="email" placeholder="Enter your email" required>
+                    </div>
+                </div>
+
+                <div class="form-group full-width">
+                    <label for="message">Message</label> <br>
+                    <textarea id="message" rows="6" placeholder="Write your message here..." required></textarea>
+                </div>
+
+                <div class="form-actions">
+                    <button type="submit">Send Message</button>
+                </div>
+            </form>
+        </section>
+
+        <section class="social">
+            <h2>Follow me:</h2>
+
+            <div class="social-links">
+                <a href="https://www.instagram.com/itspjyormyan/" target="_blank" rel="noopener noreferrer">
+                    <img src="Image%20folder/insta.webp" alt="Instagram" width="50">
+                </a>
+
+                <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">
+                    <img src="Image%20folder/facebook.webp" alt="Facebook" width="50">
+                </a>
+
+                <a href="https://www.tiktok.com/" target="_blank" rel="noopener noreferrer">
+                    <img src="Image%20folder/tiktok.png" alt="TikTok" width="50">
+                </a>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <p>Thank you for visiting the website.</p>
+        </div>
+    </footer>
+
+</body>
+</html>

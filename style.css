@@ -1,0 +1,373 @@
+/* ==========================================================================
+   1. GLOBAL & RESET STYLES
+   ========================================================================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: #ebebeb;
+    color: #1a1a1a;
+    line-height: 1.5;
+    overflow-x: hidden; /* Prevents unwanted horizontal scrolling */
+}
+
+/* ==========================================================================
+   2. HEADER & NAVIGATION INTERFACE
+   ========================================================================== */
+header.top {
+    background-color: #1a1a1a;
+    padding: 12px 24px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+}
+
+.header-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap; /* Allows items to drop cleanly on smaller displays */
+    gap: 12px;
+}
+
+/* Logo */
+.logo img {
+    height: 38px;
+    width: auto;
+    border-radius: 4px;
+    display: block;
+}
+
+/* Navigation Links */
+.navigation ul {
+    display: flex;
+    list-style: none;
+    gap: 24px;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+}
+
+.navigation ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+    transition: color 0.2s ease;
+    white-space: nowrap;
+}
+
+.navigation ul li a:hover {
+    color: #2b78e4;
+}
+
+/* Search Box */
+.search-box {
+    display: flex;
+    align-items: center;
+    background-color: #2e2e2e;
+    border-radius: 20px;
+    padding: 4px 6px 4px 14px;
+}
+
+.search-box input {
+    background: transparent;
+    border: none;
+    outline: none;
+    color: #ffffff;
+    font-size: 13px;
+    width: 140px;
+}
+
+.search-box input::placeholder {
+    color: #aaaaaa;
+}
+
+.search-box button {
+    background-color: #2b78e4;
+    border: none;
+    color: #ffffff;
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.2s ease;
+    flex-shrink: 0;
+}
+
+.search-box button:hover {
+    background-color: #1a5bb8;
+}
+
+/* ==========================================================================
+   3. MAIN LAYOUT & CARDS
+   ========================================================================== */
+.container {
+    max-width: 950px;
+    width: 100%;
+    margin: 25px auto;
+    padding: 0 16px;
+}
+
+/* Common Card Styling */
+.about, .projects, .skills, .education, .contact, .social {
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 24px;
+    margin-bottom: 25px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+    width: 100%;
+}
+
+.container h1, .container h2 {
+    font-size: 22px;
+    font-weight: 700;
+    color: #1a1a1a;
+    border-bottom: 1px solid #222222;
+    padding-bottom: 8px;
+    margin-bottom: 16px;
+}
+
+/* ==========================================================================
+   4. SECTION-SPECIFIC STYLES
+   ========================================================================== */
+
+/* About Section */
+.about {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.about-content p {
+    font-size: 14px;
+    color: #333333;
+}
+
+.about-image img {
+    border-radius: 4px;
+    object-fit: cover;
+    max-width: 100%;
+    height: auto;
+}
+
+/* Projects Section */
+.project {
+    background-color: #ededed;
+    border-radius: 8px;
+    padding: 20px;
+}
+
+.project h3 {
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.project p {
+    font-size: 13.5px;
+    color: #333333;
+}
+
+/* Tables (Skills & Education) */
+.table-container {
+    overflow-x: auto;
+    width: 100%;
+}
+
+.table-container table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 13.5px;
+    min-width: 450px; /* Prevents squishing on small mobile screens */
+}
+
+.table-container th {
+    background-color: #1a1a1a;
+    color: #ffffff;
+    text-align: left;
+    padding: 10px 14px;
+    font-weight: 600;
+}
+
+.table-container td {
+    padding: 10px 14px;
+    border-bottom: 1px solid #e5e5e5;
+    border-right: 1px solid #e5e5e5;
+}
+
+.table-container tbody tr td:first-child {
+    border-left: 1px solid #e5e5e5;
+}
+
+.table-container tbody tr:nth-child(even) {
+    background-color: #fafafa;
+}
+
+/* Contact Form */
+.contact-form p {
+    font-size: 14px;
+    margin-bottom: 16px;
+    color: #333333;
+}
+
+.form-row {
+    display: flex;
+    gap: 16px;
+    margin-bottom: 16px;
+}
+
+.form-group {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group label {
+    font-size: 13px;
+    font-weight: 600;
+    margin-bottom: 6px;
+    color: #333333;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px 12px;
+    border: 1px solid #cccccc;
+    border-radius: 6px;
+    font-size: 13.5px;
+    outline: none;
+    background-color: #fafafa;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: #2b78e4;
+    background-color: #ffffff;
+}
+
+.form-actions {
+    margin-top: 16px;
+}
+
+.form-actions button {
+    background-color: #1a1a1a;
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 6px;
+    font-size: 13.5px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.form-actions button:hover {
+    background-color: #333333;
+}
+
+/* Social Section */
+.social-links {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+}
+
+.social-links img {
+    border-radius: 8px;
+    transition: transform 0.2s ease;
+}
+
+.social-links img:hover {
+    transform: scale(1.08);
+}
+
+/* Footer */
+.footer {
+    background-color: #1a1a1a;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px;
+    font-size: 13px;
+}
+
+/* ==========================================================================
+   5. MEDIA QUERIES (RESPONSIVE TARGETING)
+   ========================================================================== */
+
+/* Tablet View (max-width: 900px) */
+@media (max-width: 900px) {
+    header.top {
+        padding: 12px 16px;
+    }
+
+    .header-container {
+        justify-content: center;
+        gap: 14px;
+    }
+
+    .navigation ul {
+        gap: 16px;
+    }
+
+    .container {
+        margin: 16px auto;
+    }
+}
+
+/* Mobile View (max-width: 600px) */
+@media (max-width: 600px) {
+    header.top {
+        padding: 12px 10px;
+    }
+
+    .header-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 12px;
+    }
+
+    .navigation ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 12px 16px;
+    }
+
+    .navigation ul li a {
+        font-size: 13px;
+    }
+
+    .search-box {
+        width: 100%;
+        max-width: 280px;
+        justify-content: space-between;
+    }
+
+    .search-box input {
+        width: 100%;
+    }
+
+    .form-row {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .about, .projects, .skills, .education, .contact, .social {
+        padding: 16px;
+    }
+
+    .table-container table {
+        font-size: 12px;
+    }
+}
